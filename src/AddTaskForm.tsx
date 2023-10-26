@@ -8,9 +8,9 @@ interface Props {
 
 const AddTaskForm: React.FC<Props> = ({currentTask, handleTaskChange, handleAddTask}) => {
   return (
-    <div>
-      <input type="text" value={currentTask} onChange={handleTaskChange} />
-      <button onClick={handleAddTask}>ADD</button>
+    <div className="input-container">
+      <input className="input" type="text" value={currentTask} onChange={handleTaskChange}/>
+      <button className="add-btn" onClick={handleAddTask}>ADD</button>
     </div>
   );
 };
