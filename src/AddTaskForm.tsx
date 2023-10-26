@@ -1,0 +1,18 @@
+import React from 'react';
+
+interface Props {
+  currentTask: string;
+  handleTaskChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  handleAddTask: () => void;
+}
+
+const AddTaskForm: React.FC<Props> = ({currentTask, handleTaskChange, handleAddTask}) => {
+  return (
+    <div>
+      <input type="text" value={currentTask} onChange={handleTaskChange} />
+      <button onClick={handleAddTask}>ADD</button>
+    </div>
+  );
+};
+
+export default AddTaskForm;
