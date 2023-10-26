@@ -10,7 +10,7 @@ function App() {
   };
 
   const handleAddTask = () => {
-    console.log("Task added:", currentTask);
+    console.log('Task added:', currentTask);
     setCurrentTasK('');
   };
 
